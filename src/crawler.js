@@ -22,6 +22,7 @@ function getHotComics() {
                         let $a = $(elem).find('a');
                         obj.url = path.join('http://www.dm5.com/',$a.attr('href'));
                         obj.title = $a.attr('title');
+                        obj.preview = $(elem).find('img').attr('src');
                         d.push(obj);
                     });
                     resolve(d);
