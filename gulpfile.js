@@ -10,7 +10,7 @@ gulp.task("default", ['clean'], function () {
         .pipe(gulp.dest("dist"));
 });
 
-gulp.task("auto", ['clean'], function () {
+gulp.task("auto", function () {
     gulp.watch('src/**/*.js', ['build']);
 });
 
